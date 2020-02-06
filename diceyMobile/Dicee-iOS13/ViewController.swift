@@ -202,18 +202,10 @@ class ViewController: UIViewController {
             
         case #imageLiteral(resourceName: "DiceOne"):
             dice1Score = 100
-            ones += 1
-        case #imageLiteral(resourceName: "DiceTwo"):
-            twos += 1
-        case #imageLiteral(resourceName: "DiceThree"):
-            threes += 1
-        case #imageLiteral(resourceName: "DiceFour"):
-            fours += 1
+
         case #imageLiteral(resourceName: "DiceFive"):
             dice1Score = 50
-            fives += 1
-        case #imageLiteral(resourceName: "DiceSix"):
-            sixes += 1
+
         default:
             dice1Score = 0
         }
@@ -224,18 +216,11 @@ class ViewController: UIViewController {
         switch diceImageView2.image {
         case #imageLiteral(resourceName: "DiceOne"):
             dice2Score = 100
-            ones += 1
-        case #imageLiteral(resourceName: "DiceTwo"):
-            twos += 1
-        case #imageLiteral(resourceName: "DiceThree"):
-            threes += 1
-        case #imageLiteral(resourceName: "DiceFour"):
-            fours += 1
+           
+
         case #imageLiteral(resourceName: "DiceFive"):
             dice2Score = 50
-            fives += 1
-        case #imageLiteral(resourceName: "DiceSix"):
-            sixes += 1
+           
         default:
             dice2Score = 0
             }
@@ -246,18 +231,10 @@ class ViewController: UIViewController {
         switch diceImageView3.image {
         case #imageLiteral(resourceName: "DiceOne"):
             dice3Score = 100
-            ones += 1
-        case #imageLiteral(resourceName: "DiceTwo"):
-            twos += 1
-        case #imageLiteral(resourceName: "DiceThree"):
-            threes += 1
-        case #imageLiteral(resourceName: "DiceFour"):
-            fours += 1
+
         case #imageLiteral(resourceName: "DiceFive"):
             dice3Score = 50
-            fives += 1
-        case #imageLiteral(resourceName: "DiceSix"):
-            sixes += 1
+
         default:
             dice3Score = 0
         }
@@ -266,18 +243,10 @@ class ViewController: UIViewController {
         switch diceImageView4.image {
         case #imageLiteral(resourceName: "DiceOne"):
             dice4Score = 100
-            ones += 1
-        case #imageLiteral(resourceName: "DiceTwo"):
-            twos += 1
-        case #imageLiteral(resourceName: "DiceThree"):
-            threes += 1
-        case #imageLiteral(resourceName: "DiceFour"):
-            fours += 1
+
         case #imageLiteral(resourceName: "DiceFive"):
             dice4Score = 50
-            fives += 1
-        case #imageLiteral(resourceName: "DiceSix"):
-            sixes += 1
+            
         default:
             dice4Score = 0
         }
@@ -286,18 +255,10 @@ class ViewController: UIViewController {
         switch diceImageView5.image {
         case #imageLiteral(resourceName: "DiceOne"):
             dice5Score = 100
-            ones += 1
-        case #imageLiteral(resourceName: "DiceTwo"):
-            twos += 1
-        case #imageLiteral(resourceName: "DiceThree"):
-            threes += 1
-        case #imageLiteral(resourceName: "DiceFour"):
-            fours += 1
+
         case #imageLiteral(resourceName: "DiceFive"):
             dice5Score = 50
-            fives += 1
-        case #imageLiteral(resourceName: "DiceSix"):
-            sixes += 1
+  
         default:
             dice5Score = 0
         }
@@ -306,18 +267,10 @@ class ViewController: UIViewController {
         switch diceImageView6.image {
         case #imageLiteral(resourceName: "DiceOne"):
             dice6Score = 100
-            ones += 1
-        case #imageLiteral(resourceName: "DiceTwo"):
-            twos += 1
-        case #imageLiteral(resourceName: "DiceThree"):
-            threes += 1
-        case #imageLiteral(resourceName: "DiceFour"):
-            fours += 1
+
         case #imageLiteral(resourceName: "DiceFive"):
             dice6Score = 50
-            fives += 1
-        case #imageLiteral(resourceName: "DiceSix"):
-            sixes += 1
+
         default:
             dice6Score = 0
         }
@@ -329,12 +282,12 @@ class ViewController: UIViewController {
         
         score.text = String(currentScore)
         
-        print("number of ones: " + String(ones))
-        print("number of twos: " + String(twos))
-        print("number of threes: " + String(threes))
-        print("number of fours: " + String(fours))
-        print("number of fives: " + String(fives))
-        print("number of sixes: " + String(sixes))
+//        print("number of ones: " + String(ones))
+//        print("number of twos: " + String(twos))
+//        print("number of threes: " + String(threes))
+//        print("number of fours: " + String(fours))
+//        print("number of fives: " + String(fives))
+//        print("number of sixes: " + String(sixes))
         
         //print(rollArray)
 
