@@ -58,6 +58,13 @@ class ViewController: UIViewController {
     var fours = 0
     var fives = 0
     var sixes = 0
+    var currentCheckScore = 0
+    var checkDice1Score = 0
+    var checkDice2Score = 0
+    var checkDice3Score = 0
+    var checkDice4Score = 0
+    var checkDice5Score = 0
+    var checkDice6Score = 0
     
     func clear() {
         ones = 0
@@ -141,6 +148,8 @@ class ViewController: UIViewController {
         }
     }
     
+    
+    
     // When the 'Roll' button gets tapped
     @IBAction func rollButtonPressed(_ sender: UIButton) {
         clear()
@@ -210,7 +219,7 @@ class ViewController: UIViewController {
             dice1Score = 0
         }
         
-        print ("dice1: " + String(dice1Score)) //TEST
+        print ("dice1: " + String(dice1Score))
         
     
         switch diceImageView2.image {
@@ -277,25 +286,68 @@ class ViewController: UIViewController {
         print ("dice6: " + String(dice6Score))
 
         currentScore = dice1Score + dice2Score + dice3Score + dice4Score + dice5Score + dice6Score
+        
 
         print ("Total score: " + String(currentScore))
         
-        score.text = String(currentScore)
-        
-//        print("number of ones: " + String(ones))
-//        print("number of twos: " + String(twos))
-//        print("number of threes: " + String(threes))
-//        print("number of fours: " + String(fours))
-//        print("number of fives: " + String(fives))
-//        print("number of sixes: " + String(sixes))
-        
-        //print(rollArray)
+        print ("Checked dice score: " + String(currentCheckScore))
 
-
-        
         
     }
     
+    
+    // When Update is tapped, display current score
+           @IBAction func updatePressed(_ sender: UIButton) {
+            
+            // Check to see if dice are checked
+            // if they are, assign value to checkDiceScore var
+            
+            if (check1.isHidden == false) {
+                checkDice1Score = dice1Score
+            } else {
+                checkDice1Score = 0
+            }
+            if (check2.isHidden == false) {
+            checkDice2Score = dice2Score
+            } else {
+                checkDice2Score = 0
+            }
+            if (check3.isHidden == false) {
+            checkDice3Score = dice3Score
+            } else {
+                checkDice3Score = 0
+            }
+            if (check4.isHidden == false) {
+            checkDice4Score = dice4Score
+            } else {
+                checkDice4Score = 0
+            }
+            if (check5.isHidden == false) {
+            checkDice5Score = dice5Score
+            } else {
+                checkDice5Score = 0
+            }
+            if (check6.isHidden == false) {
+            checkDice6Score = dice6Score
+            } else {
+                checkDice6Score = 0
+            }
+            
+            // Add up the score
+            currentCheckScore = checkDice1Score + checkDice2Score + checkDice3Score
+            + checkDice4Score + checkDice5Score + checkDice6Score
+            // Display the correct score
+               score.text = String(currentCheckScore)
+
+           }
+    
+//    if (none of the unchecked boxes = 1 or 5) {
+//        Game is over
+//        Dice reset
+//        Score is 0
+//    }
+    
+
     
     // When the Reset button is tapped, reset all dice and un-hold them
     @IBAction func resetButtonPressed(_ sender: UIButton) {
