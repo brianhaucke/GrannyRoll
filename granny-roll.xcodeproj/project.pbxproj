@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5239705E23EB66A100353382 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5239705D23EB66A100353382 /* Default-568h@2x.png */; };
 		52875C0023F723650045CAE4 /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52875BFF23F723650045CAE4 /* DemoTests.swift */; };
+		52E79CDC2400904400DF4212 /* scoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E79CDB2400904400DF4212 /* scoring.swift */; };
 		ADAD913C22B0FDAE007B460A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ADAD913B22B0FDAE007B460A /* README.md */; };
 		ADB0DFFD22AFA6090030352D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0DFFC22AFA6090030352D /* AppDelegate.swift */; };
 		ADB0E00122AFA6090030352D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0E00022AFA6090030352D /* ViewController.swift */; };
@@ -34,6 +35,7 @@
 		52875BFD23F723650045CAE4 /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52875BFF23F723650045CAE4 /* DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTests.swift; sourceTree = "<group>"; };
 		52875C0123F723650045CAE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52E79CDB2400904400DF4212 /* scoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scoring.swift; sourceTree = "<group>"; };
 		ADAD913B22B0FDAE007B460A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		ADB0DFF922AFA6090030352D /* granny-roll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "granny-roll.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADB0DFFC22AFA6090030352D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				5231F86423DF82FF00CDC1F4 /* 29.png */,
 				ADB0E00722AFA60E0030352D /* LaunchScreen.storyboard */,
 				ADB0E00A22AFA60E0030352D /* Info.plist */,
+				52E79CDB2400904400DF4212 /* scoring.swift */,
 			);
 			path = "Dicee-iOS13";
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADB0E00122AFA6090030352D /* ViewController.swift in Sources */,
+				52E79CDC2400904400DF4212 /* scoring.swift in Sources */,
 				ADB0DFFD22AFA6090030352D /* AppDelegate.swift in Sources */,
 				ADE1FB1422B39F0200DD2BD6 /* SceneDelegate.swift in Sources */,
 			);
@@ -410,8 +414,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 84ZZX53276;
+				DEVELOPMENT_TEAM = SQ8HF75TY4;
 				INFOPLIST_FILE = "Dicee-iOS13/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -420,6 +425,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.brianhaucke.Dicey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -429,8 +435,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 84ZZX53276;
+				DEVELOPMENT_TEAM = SQ8HF75TY4;
 				INFOPLIST_FILE = "Dicee-iOS13/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -439,6 +446,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.brianhaucke.Dicey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
